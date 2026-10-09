@@ -2,18 +2,18 @@ import { useState } from 'react'
 import Quadrado from '../../img/quadrado.png'
 
 export default function Conteudo() {
-    const [nome, setNome] = useState<string | null>("")
+    const [nome] = useState<string|null>("")
+    
 
-
-    function alterarNome() {
-        const nome: string | null = prompt("digite um novo nome: ")
+    function alterarNome () {
+        const nome:string|null = prompt("digite um novo nome: ") 
         console.log(`Nome digitado: ${nome}`)
     }
 
 
-    return (
+    return(
         <main>
-            <div>
+            <div> 
 
                 <p>Nome: {nome}</p>
                 <button onClick={() => alterarNome()}>Nome = {nome}</button>
@@ -30,7 +30,7 @@ export default function Conteudo() {
                     <figcaption>Bloco de imagem 600x400</figcaption>
                 </figure>
 
-                <figure>
+                 <figure>
                     <img src={Quadrado} alt="" />
                     <figcaption>Bloco de imagem 400x400</figcaption>
                 </figure>
