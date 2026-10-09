@@ -1,6 +1,7 @@
 
 export default function Error() {
 
+<<<<<<< HEAD
   document.title = "Error - 404";
 
   return (
@@ -9,3 +10,11 @@ export default function Error() {
     </main>
   )
 }
+=======
+    return(
+        <div>
+            <h1>Erro </h1>
+        </div>
+    )
+}
+>>>>>>> origin/feature/exemplo-rm569497
